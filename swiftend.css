@@ -29,6 +29,13 @@
     height: 48px;
 }
 
+.brand-logo:hover{
+    -webkit-transform: rotateZ(10deg);
+    -ms-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
+    transition: 1s ease;
+    }
+
 .menu {
     display: inline-block;
     text-decoration: none;
@@ -109,6 +116,7 @@
     justify-content: space-around;
     position: relative;
     overflow: hidden;
+    padding: 2rem;
     font-size: 13px;
     height: 60vh;
 }
@@ -122,10 +130,11 @@
     text-align: left !important;
     max-width: 550px;
     width: 100%;
-    padding: 2rem;
+    padding: 2rem !important;
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: space-between;
 }
 
 .text { 
@@ -138,12 +147,15 @@
     font-weight: 700;
     letter-spacing: -2px;
     line-height: 1.083;
+    padding: 2rem;
 }
 
 .sub-info {
-    color: #161c2d;
-    padding:0px 1px 0px 0px ;
-    font-size: 12.77px;
+    color: #5f687b;
+    padding-left:2rem;
+    font-size: 1.0625rem;
+    letter-spacing: -0.2px;
+    line-height: 1.71;
 }
 
 .right-side {
@@ -156,6 +168,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: space-between;
 }
     
 
@@ -163,6 +176,7 @@
     position: relative;
     max-width: 538px;
     max-height: 435px;
+    margin-left: -20px;
     float: left;
     z-index: -1;
  }
@@ -172,6 +186,7 @@
     max-width: 445px; 
     z-index: 998;
     float: right; 
+    margin-left: 30px;
  }
 
 .row {
@@ -437,6 +452,40 @@
       display: inline;
       justify-content: space-between;
   }
+
+  .list {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+
+  .list-item {
+      display: inline; 
+      font-size: 15px; 
+      color: #ffffff; 
+      font-weight: 700; 
+      letter-spacing: -0.1px; 
+      line-height: 1.73;  
+      padding: 20px;
+  }
+
+  
+  .list-item:link,
+  .list-item:visited {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+}
+    .list-item:hover,
+    .list-item:active {
+       color: #ffffff;
+       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.733);
+       transform: rotate(5deg) scale(1.1);
+}
 
   .lower-footer {
       justify-content: space-between;
