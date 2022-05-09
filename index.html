@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Swiftend - Identity Verification Service</title>
+  <link rel="shortcut icon" href="image/logo-main-black.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link href="http://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/db7ecc96f7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-theme="light">
+  <!-- Header Area -->
+  <header class="site-header site-header--menu-left site-header--absolute" style="top: 25px;">
+    <div class="container">
+      <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
+        <!-- Brand Logo-->
+        <div class="brand-logo">
+          <a href="https://swiftend.com">
+            <!-- light version logo (logo must be black)-->
+            <img src="image/logo-main-black.png" alt="" class="light-version-logo " style="max-width: 48px;">
+            <!-- Dark version logo (logo must be White)-->
+            <img src="image/logo-main-white.png" alt="" class="dark-version-logo" style="max-width: 48px;">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="mobile-menu">
+          <div class="navbar-nav-wrapper">
+            <ul class="navbar-nav main-menu" style="justify-content: center;">
+             
+              <li style="border-right: 1px solid #80808040;" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Use Cases</a>
+                <ul class="gr-menu-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="drop-menu-item">
+                    <a href="#">
+                      Identity Verification
+                    </a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="#">
+                      Address Verification
+                    </a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="#">
+                      Watchlist Screening
+                    </a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="#">
+                      Age Verification
+                    </a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="#">
+                      Business Verification
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <span class="nav-item dropdown"> | </span> -->
+              <li class="nav-item ">
+                <a href="#" class="nav-link dropdown-toggle gr-toggle-arrow">API Documentation</a>
+              </li>
+          </div>
+          <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+            <i class="gr-cross-icon"></i>
+          </button>
+        </div>
+        <div class="header-btn  ml-auto ml-lg-5 mr-6 mr-lg-0 d-none d-xs-block">
+          <a target="_blank" href="#" class="btn btn-primary gr-text-9 row">
+            <i class="fas fa-lock mr-3"></i>
+            Partner Login
+          </a>
+        </div>
+
+        <!-- Mobile Menu Hamburger-->
+        <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+          <span class="hamburger hamburger--squeeze js-hamburger">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </span>
+        </button>
+        <!--/.Mobile Menu Hamburger Ends-->
+      </nav>
+    </div>
+  </header>    <!-- Hero Area -->
+    <div class="position-relative bg-default-2 bg-pattern pattern-2 pt-27 pt-lg-32 pb-15 pb-lg-27">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-9 col-md-7 col-lg-5 offset-xl-1 align-self-sm-end order-lg-2">
+            <div class="hero-img image-group-p12 position-relative mb-9 mb-sm-15 mb-lg-0 aos-init aos-animate" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
+              <!-- <img class="w-100" src="image/telemedicine/png/hero-img-main.png" alt=""> -->
+
+              <div class="header bg-transparent feature-section bg-default-6 bg-pattern pattern-5">
+                <div class="header-slider" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+                  <div class="single-slide">
+                    <img class="w-100" src="image/2.png" alt="">
+                  </div>
+                  <!-- <div class="single-slide">
+                  <img class="w-100" src="image/7.png" alt="">
+                  </div>
+                  <div class="single-slide">
+                    <img class="w-100" src="image/1.png" alt="">
+                  </div>
+                  <div class="single-slide">
+                    <img class="w-100" src="image/3.png" alt="">
+                  </div>
+                  <div class="single-slide">
+                    <img class="w-100" src="image/4.png" alt="">
+                  </div>
+                  <div class="single-slide">
+                    <img class="w-100" src="image/5.png" alt="">
+                  </div>
+                  <div class="single-slide">
+                    <img class="w-100" src="image/6.png" alt="">
+                  </div>
+                  <div class="single-slide">
+                    <img class="w-100" src="image/7.png" alt="">
+                  </div> -->
+
+                </div>
+              </div>
+
+              <div class="image-bg-positioning">
+                <img src="image/hero-img-sub.png" alt="">
+              </div>
+            </div>
+            <div class=" hero-sm-card-1">
+              <div class="px-7 py-6 d-flex align-items-center bg-white shadow-10 rounded-15 hero-card-1-animation" id="an-item-1p1">
+                <p class="gr-text-7 mb-0 text-mirage-2" style="font-size: 16px;">Who ?</p>
+                <div class="small-card-img ml-6">
+                  <i class="fa fa-2x fa-user-circle" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="animation-item">
+              <div class="px-7 py-6 d-flex align-items-center bg-red shadow-9 rounded-15 w-xs-38 w-xl-38 hero-sm-card-2 hero-card-2-animation" id="an-item-1p2" style="background-color: #585959 !important;">
+                <div class="small-card-img mr-6 text-white">
+                  <i class="fa fa-2x fa-map-marker-alt" aria-hidden="true"></i>
+
+                </div>
+                <p class="gr-text-7 mb-0 text-white" style="font-size: 16px;">Where ?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6 order-lg-1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+            <div class="hero-content section-title text-center text-lg-left">
+              <h1 class="gr-text-2 mb-8" style="color: #004d51;font-size: 50px; font-weight: 500 !important;">
+                Simplifying Identity
+                <br class="">Verification accross Africa!
+              </h1>
+              <p class="gr-text-9 gr-text-color pr-md-7">
+                Swiftend takes just 5 secs to verify your customers and prevent fraud via the use of smarter identity
+                verification services and compliance solutions.</p>
+
+              <div class="update-btn alert-section mt-12 px-6">
+                <div style="border-bottom: 1px solid #0000001f;border-radius: 0px;" class="row align-items-start justify-content-start px-6 rounded-8 py-7">
+                  <div class="">
+                    <div style="color: #585959; gap: 1rem;" class="alert-content d-flex flex-column flex-lg-row align-items-center justify-content-lg-center text-center">
+                      <i style="transform: rotate(-20deg); color: #004d51;" class="fas fa-bullhorn gr-text-9 "></i>
+                      <span class="alert-text gr-text-11">Improved the performance of DAVS IP geocoding .. <a target="_blank" href="https://swiftend-docs-awqh8.ondigitalocean.app/" style="color: #004d51;font-size: 0.9375rem;" class="alert-text gr-text-9 gr-text-underline hover-underline">Read More...</a>
+                   </span>
+                       </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="content-section border-bottom pt-12 pb-10 bg-default-6 py-xl-25 ">
+      <div class="container">
+        <div class="row align-items-center justify-content-md-center">
+          <div class="col-lg-3 col-md-10">
+            <div class="content-text text-center text-lg-left mb-9 mb-lg-0 pr-xl-11">
+              <h2 class="title gr-text-5 mb-8">Stronger KYC</h2>
+              <p class="gr-text-8 mb-9">We help companies to meet regulatory compliance, prevent fraud and combat the risks
+                associated with verification of digital identities.</p>
+              <a target="_blank" href="#" class="btn btn-primary gr-hover-y">Talk to us</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8">
+            <div class="col-sm-10 col-md-7 col-lg-6 col-xl-5 offset-xl-2 order-lg-2 mb-9 mb-lg-0" style="
+            margin-left: 20px;
+        ">
+              <div class="double-image-group tel-content-image-group-2" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+                <div class="holders position-absolute d-flex align-items-center rounded-10">
+
+                  <div class="circle-loader load-complete">
+                    <div class="checkmark draw" style="display: block;"></div>
+                  </div>
+                  <p class="gr-text-10 mb-0 ml-2 font-weight-bold">Approved</p>
+                </div>
+                <img class="main-img" src="./image/content-2-img-2.png" alt="" />
+                <div class="abs-image-1 gr-z-index-n1" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true">
+
+                  <div style="width: 220px; height: 227px;" class="overflow-hidden the-card h-sm-100 anim-shadow-up rounded-10 pt-7">
+                    <h6 class="px-7 mb-4">Personal details</h6>
+
+                    <div class="c">
+                      <div class="card-home col-10">
+                        <div class="px-2">
+                          <small>Name</small>
+                          <span></span>
+                        </div>
+                        <div class="d-flex ">
+                          <div class="w-100 px-2">
+                            <small>Age</small>
+                            <span></span>
+                          </div>
+                          <div class=" w-100 px-2">
+                            <small>Gender</small>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="px-2">
+                          <small>Details</small>
+                          <span class=""></span>
+                          <span class="col-6"></span>
+                          <span class="col-8"></span>
+                          <span class="col-4"></span>
+                        </div>
+                        <div class="px-2">
+                          <small>Address</small>
+                          <span class=""></span>
+                          <span class="col-8"></span>
+                          <span class="col-9"></span>
+                        </div>
+
+                        <div class="px-2">
+                          <small>Nationality</small>
+                          <span class="col-8"></span>
+                        </div>
+                        <div class="">
+                          <div class="px-2">
+                            <small>Phone </small>
+                            <span class=""></span>
+                            <span class="col-9"></span>
+                          </div>
+                          <div class=" px-2">
+                            <small>Education</small>
+                            <span class="col-9"></span>
+                            <span class="col-7"></span>
+                            <span class="col-8"></span>
+                          </div>
+                        </div>
+                        <div class="px-2">
+                          <small>Issued IDs</small>
+                          <span class=""></span>
+                          <span class="col-8"></span>
+                          <span class="col-6"></span>
+                          <span class="col-5"></span>
+                          <span class="col-9"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+
+
+                </div>
+                <div class="abs-image-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true">
+                  <img src="./image/content2-img-sub.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-wrapper mt-6 mt-md-0 pl-xl-9">
+              <div class="single-stat py-6 aos-init aos-animate" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+                <h3 class="title gr-text-7 mb-5">Identity </h3>
+                <p class="gr-text-8 mb-0">Verify your customers details to comply with regulators and KYC
+                  regulations.</p>
+              </div>
+
+              <div class="single-stat py-6 aos-init aos-animate" data-aos="fade-left" data-aos-duration="1800" data-aos-once="true">
+                <h3 class="title gr-text-7 mb-5"><span>Address</h3>
+                <p class="gr-text-8 mb-0">Physically verify your customers addresses through last mile agents networks and communication infrastructure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Service section  -->
+    <!-- featured jobs section -->
+    <div class="job-site-page feature-section bg-default-6 bg-pattern pattern-7 pt-13 pt-lg-24 pb-2 pb-lg-22" style="background: #e2e2e27a;">
+    <div class="overlay"></div>
+      <div class="container z-index-99 position-relative">
+        <div class="row justify-content-lg-between align-items-center pb-9 pb-sm-0">
+          <div class="col-sm-8 col-md-6 col-lg-6 col-xl-9">
+            <div class="section-title mb-9 mb-sm-13 mb-lg-21">
+              <h2 class="title gr-text-4 mb-6 text-dark-green">What are you going to build today?</h2>
+              <p class="gr-text-8">We connect businesses to thousands of APIs, providing strong
+                foundations
+                for innovative businesses to enhance their products and services.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-6 col-lg-4 col-xl-3">
+            <div class="job-feature-slider-arrows ml-auto">
+            </div>
+          </div>
+        </div>
+        <div class="job-feature-slider" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+          <div class="single-slide">
+            <a href="#" class="feature-widget focus-reset bg-white d-flex flex-column min-height-px-297 border rounded-10 pt-8 pb-8 pl-7 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
+              <div class="mb-auto">
+                <h5 class="gr-text-12 pb-1 text-dark-green text-uppercase"><i class="fas fa-2x fa-hand-holding-usd"></i>
+                </h5>
+                <h3 class="gr-text-6 text-blackish-blue">Lending</h3>
+                <p class="gr-text-9 gr-color-blackish-blue-opacity-7 mb-0">Make better lending
+                  decisions with enriched banking data.</p>
+              </div>
+              <div class="d-flex">
+
+
+              </div>
+            </a>
+          </div>
+
+          <div class="single-slide">
+            <a href="#" class="feature-widget focus-reset bg-white d-flex flex-row min-height-px-297 border rounded-10 pt-8 pb-8 pl-7 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
+              <div class="mb-auto">
+                <h5 class="gr-text-12 pb-1 text-dark-green text-uppercase"><i class="fas fa-2x fa-store-alt"></i></h5>
+                <h3 class="gr-text-6 text-blackish-blue">Finance</h3>
+                <p class="gr-text-9 gr-color-blackish-blue-opacity-7 mb-0">Know your customers and
+                  avoid chargeback, and customers that drops out of checkout.</p>
+              </div>
+
+            </a>
+          </div>
+          <div class="single-slide">
+            <a href="#" class="feature-widget focus-reset bg-white d-flex flex-row min-height-px-297 border rounded-10 pt-8 pb-8 pl-7 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
+              <div class="mb-auto">
+                <h5 class="gr-text-12 pb-1 text-dark-green text-uppercase"><i class="fas fa-2x fa-dice-d6"></i></h5>
+                <h3 class="gr-text-6 text-blackish-blue">Gaming</h3>
+                <p class="gr-text-9 gr-color-blackish-blue-opacity-7 mb-0">Make it simple for players to verify
+                  themselves from any device.</p>
+              </div>
+
+            </a>
+          </div>
+          <div class="single-slide">
+            <a href="#" class="feature-widget focus-reset bg-white d-flex flex-row min-height-px-297 border rounded-10 pt-8 pb-8 pl-7 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
+              <div class="mb-auto">
+                <h5 class="gr-text-12 pb-1 text-dark-green text-uppercase"><i class="fas fa-2x fa-cart-arrow-down"></i>
+                </h5>
+                <h3 class="gr-text-6 text-blackish-blue">ECommerce</h3>
+                <p class="gr-text-9 gr-color-blackish-blue-opacity-7 mb-0">Setup chargeback prevention initiatives
+                  on your platform, and more.</p>
+              </div>
+
+            </a>
+          </div>
+          <div class="single-slide">
+            <a href="#" class="feature-widget focus-reset bg-white d-flex flex-row min-height-px-297 border rounded-10 pt-8 pb-8 pl-7 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
+              <div class="mb-auto">
+                <h5 class="gr-text-12 pb-1 text-dark-green text-uppercase"><i class="fas fa-2x fa-satellite-dish"></i>
+                </h5>
+                <h3 class="gr-text-6 text-blackish-blue">Telcos</h3>
+                <p class="gr-text-9 gr-color-blackish-blue-opacity-7 mb-0"> Build a great onboarding platforms while
+                  filtering out the bad
+                  actors. </p>
+              </div>
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>   <!-- Footer section -->
+   <div class="footer-section bg-blackish-blue dark-mode-texts">
+     <div class="container">
+       <div class="row justify-content-center align-items-center" style="padding-top: 30px;">
+         <div class="col-lg-3 col-md-4">
+           <div class="footer-logo text-center text-md-left mb-7 mb-md-0">
+             <a href="index">
+               <img src="./image/logo-main-black.png" alt="" class="light-version-logo mx-auto mx-md-0">
+               <img src="./image/logo-main-white.png" alt="" class="dark-version-logo mx-auto mx-md-0" style="max-width: 40px">
+             </a>
+           </div>
+         </div>
+         <div class="col-lg-8 offset-lg-1 col-md-8">
+           <ul class="footer-links gr-text-11 py-lg-7 list-unstyled mb-0 d-xs-flex align-items-center justify-content-around justify-content-md-end flex-wrap">
+             <li class="ml-md-12 text-center"><a href="about" class="gr-text-color gr-hover-text-blue font-weight-bold ">Company</a></li>
+             <li class="ml-md-12 text-center"><a href="" class="gr-text-color gr-hover-text-blue font-weight-bold ">Privacy Policy</a></li>
+             <li class="ml-md-12 text-center"><a href="careers" class="gr-text-color gr-hover-text-blue font-weight-bold ">Careers</a></li>
+             <li class="ml-md-12 text-center"><a href="security" class="gr-text-color gr-hover-text-blue font-weight-bold ">Security</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="copyright-area border-top py-9">
+         <div class="row align-items-center">
+           <div class="col-lg-6">
+             <p class="copyright-text gr-text-11 mb-6 mb-lg-0 gr-text-color-opacity text-center text-lg-left">
+               © 2022 Copyright, All Right Reserved, D'Accubin.
+               <i class="icon icon-heart-2-2 text-sky-blue align-middle ml-2"></i>
+             </p>
+           </div>
+           <div class="col-lg-6 text-center text-lg-right">
+             <ul class="social-icons list-unstyled mb-0">
+
+               <li class="ml-7"><a target="_blank" href="#" class="gr-text-color"><i class="icon icon-logo-linkedin"></i></a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   </div>
+
+   </body>
+
+   </html>
